@@ -5,6 +5,14 @@ terraform {
       version = "3.5.0"
     }
   }
+
+  cloud {
+    organization = "vocaldate"
+
+    workspaces {
+      name = "vocaldate"
+    }
+  }
 }
 
 provider "google" {
