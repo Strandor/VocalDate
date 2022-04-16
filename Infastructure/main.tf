@@ -16,8 +16,6 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("service.json")
-
   project = "vocaldate"
   region  = "us-east1"
   zone    = "us-east1-a"
