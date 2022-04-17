@@ -36,5 +36,5 @@ jobs:
         uses: "google-github-actions/setup-gcloud@v0"
 
       - run: gcloud auth configure-docker
-      - run: docker build -t gcr.io/web:latest .
-      - run: docker push gcr.io/web:latest
+      - run: docker build -t us-east1-docker.pkg.dev/vocaldate/web:latest .
+      - run: docker push us-east1-docker.pkg.dev/vocaldate/web:latest
