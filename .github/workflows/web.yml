@@ -37,4 +37,4 @@ jobs:
 
       - run: gcloud auth configure-docker
       - run: docker build -t gcr.io/web:latest .
-      - run: docker push -t gcr.io/web:latest
+      - run: docker push gcr.io/web:latest
