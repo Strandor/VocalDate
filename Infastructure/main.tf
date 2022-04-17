@@ -48,3 +48,10 @@ resource "google_cloud_run_service" "default" {
     latest_revision = true
   }
 }
+
+resource "google_artifact_registry_repository" "web" {
+  location = "us-east1"
+  repository_id = "web"
+  description = "web docker repository"
+  format = "DOCKER"
+}
