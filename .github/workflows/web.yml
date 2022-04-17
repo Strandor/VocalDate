@@ -26,8 +26,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
       - name: Set up Docker Buildx
@@ -42,3 +40,4 @@ jobs:
         with:
           push: true
           tags: strandor/web-vocaldate:latest
+          context: "{{defaultContext}}:WEB"
