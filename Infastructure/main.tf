@@ -34,6 +34,10 @@ resource "google_cloud_run_service" "default" {
     spec {
       containers {
         image = "gcr.io/vocaldate/web:latest"
+
+        ports {
+          container_port = 8080
+        }
       }
     }
   }
